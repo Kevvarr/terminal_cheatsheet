@@ -15,8 +15,8 @@ pwd:  prints current address
 - mkdir: creates Directories
 - rmdir: removes Empty Directories
 - man: provides help with a command
-- > : (override) redirects information from left to the right eg. date > file.txt
-- >> : (append) redirects information from left to the right eg. date > file.txt
+- ">" : (override) redirects information from left to the right eg. date > file.txt
+- ">>" : (append) redirects information from left to the right eg. date > file.txt
 - cat: shows entire file
 - cat: shows 10 lines of file
 - cat: shows last 10 lines of the file
