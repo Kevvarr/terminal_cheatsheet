@@ -23,6 +23,9 @@ pwd:  prints current address
 - cat: or contatenate in output
 - sort: sort the output
 # Intermediate
+- su: changes user
+- sudo: run commands with elevated permissions (root)
+- nano: editor
 - ps: process status
 - kill <PID>: kill (terminates) programs
 - |: pipelines
@@ -35,7 +38,11 @@ pwd:  prints current address
 - fg: resumes job in foreground
 - gzip: compresses files to zip (-k to save the file copy)
 - gunzip: unzip
-
+- tar: create an archive, grouping multiple files in a single file
+- ln: create links (hard link) -> like a pointer to another file
+- ln -s: create links (soft link) -> like a pointer to another file
+- chown: changes ownership of a file/directory
+- chmod: changes permisions in a file/directory
 
 # Advance
 
