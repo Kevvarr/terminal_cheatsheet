@@ -45,4 +45,16 @@ pwd:  prints current address
 - chmod: changes permisions in a file/directory
 
 # Advance
-
+- man: provides help about command
+- shutdown -h now: shutdown machine now (-r to restart instead of -h)
+- head/tail: shows first/last 10 lines
+- uname: shows kernel info
+- sudo ss -ltn: check open ports
+- netstat: also check open ports (old way)
+- ifconfig: check ip address
+- ip addr show: also checks ip address
+- df -ah:checks for free disk space
+- systemctl: Manages a service
+- systemd: (new way) Manages a service such as nginx, mysql...
+- du -sh : Check size in a directory's content
+- ps aux | grepn <process>: Checks cpu usage of a process
