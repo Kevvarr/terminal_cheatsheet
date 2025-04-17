@@ -24,12 +24,24 @@ A comprehensive list of essential and advanced Ubuntu commands, grouped by categ
 
 | Command | Description |
 |---------|-------------|
-| `tree` | Display directory structure (install with `sudo apt install tree`). |
-| `lsblk` | List block devices. |
-| `mount /dev/sdX /mnt` | Mount a device. |
-| `umount /mnt` | Unmount device. |
-| `file <filename>` | Determine file type. |
-| `stat <file>` | Detailed file metadata. |
+| `ls -lah --color=auto` | List all files, human-readable sizes, with color. |
+| `cp -rv <src> <dst>` | Copy files/directories recursively and verbosely. |
+| `mv -iv <src> <dst>` | Move/rename files interactively with prompt. |
+| `rm -rfv <dir>` | Remove recursively, force, and show actions. |
+| `mkdir -pv <path>` | Create nested directories, show creation. |
+| `find <dir> -name "*.log"` | Find files by name. |
+| `stat <file>` | Show detailed file metadata. |
+| `file <file>` | Show file type. |
+
+---
+
+## 🔍 Search & Grep
+
+| Command | Description |
+|---------|-------------|
+| `grep -rinI "pattern" <dir>` | Recursive, case-insensitive search with line numbers. |
+| `which <cmd>` | Show path to command binary. |
+| `find <dir> -type f -mtime -7` | Find files modified in the last 7 days. |
 
 ---
 
@@ -157,6 +169,20 @@ A comprehensive list of essential and advanced Ubuntu commands, grouped by categ
 | `ufw allow <port>` | Allow port through firewall. |
 | `ufw status` | Show firewall status. |
 | `sudo fail2ban-client status` | Check Fail2Ban status (if installed). |
+
+---
+
+## 🧱 Processes & Jobs
+
+| Command | Description |
+|---------|-------------|
+| `ps aux` | List all running processes. |
+| `pgrep -af <name>` | Find process by name. |
+| `kill -9 <pid>` | Force-kill process. |
+| `xargs kill` | Kill multiple PIDs. |
+| `bg`, `fg`, `jobs` | Manage background/foreground jobs. |
+| `nice`, `renice` | Set/change process priority. |
+| `watch -n 1 "netstat -tuln"` | Run command repeatedly. |
 
 ---
 
