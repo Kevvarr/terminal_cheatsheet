@@ -121,7 +121,7 @@ A comprehensive list of essential and advanced Ubuntu commands, grouped by categ
 | `scp file user@host:/path/` | Copy file to remote server. |
 | `rsync -avz source/ user@host:/dest/` | Sync files efficiently. |
 | `ssh-keygen` | Generate SSH key pair. |
-| `ssh-copy-id user@host` | Install public key on server. |
+| `ssh-copy-id -i ~/.ssh/myKey.pub user@host` | Install public key on server. |
 
 ---
 
