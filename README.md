@@ -172,6 +172,26 @@ A comprehensive list of essential and advanced Ubuntu commands, grouped by categ
 
 ---
 
+## 🧩 Text Processing & Parsing
+
+| Command | Description |
+|---------|-------------|
+| `awk '{print $1}'` | Print the first column of input. |
+| `awk -F: '{print $1}' /etc/passwd` | Use `:` as field separator (print usernames). |
+| `sed 's/foo/bar/g' file.txt` | Replace all occurrences of `foo` with `bar`. |
+| `sed -n '5,10p' file.txt` | Print lines 5 to 10. |
+| `cut -d':' -f1 /etc/passwd` | Extract the first field from colon-separated lines. |
+| `sort file.txt` | Sort lines alphabetically. |
+| `uniq -c` | Count duplicate lines (combine with `sort`). |
+| `tr 'a-z' 'A-Z'` | Transform lowercase to uppercase. |
+| `wc -l` | Count number of lines. |
+| `head -n 10 file.txt` | Show first 10 lines. |
+| `tail -n 20 file.txt` | Show last 20 lines. |
+| `grep -o 'pattern'` | Print only the matched part of lines. |
+| `xargs -n1` | Run command for each input item. |
+
+---
+
 ## 🧱 Processes & Jobs
 
 | Command | Description |
